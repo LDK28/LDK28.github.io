@@ -1,202 +1,163 @@
-* {
-    font-family: 'Roboto', sans-serif;
+html {
+	margin: 0;
+	padding: 0;
 }
-
-header {
-    position: relative;
+body {
+	font-family: 'sans-serif', cursive;
+	font-size: 13pt;
+	background-color: #efefef;
+	padding: 10px;
+	margin: 0;
 }
-
-nav {
-    position: fixed;
-    width: 100%;
-    height: 51px;
-    background-color: #212121;
-    z-index: 2;
+h1 {
+	font-size: 15pt;
+	color: #3F704D;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
 }
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 13px 70px;
-    margin: 0;
-    list-style: none;
+h1 span {
+	border: 4px dashed #39FF14;
+	padding: 10px;
 }
-
-.menu .menu_link {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 300;
+p {
+	padding: 0;
+	margin: 0;
 }
-
-.menu .menu_item {
-    border-right: 2px dotted black;
-    padding-right: 28px;
+.img-circle {
+	border: 3px solid white;
+	border-radius: 50%;
 }
-
-.subheader {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    height: 84px;
-    background-color: rgba(0,0,0, 0.6);
+.section {
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
 }
-
-.subheader .subheader_logo {
-    display: block;
-    margin-top: 16px;
-    max-width: 100%;
+#header {
+	background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+	background-size: cover;
 }
-
-.subheader .subheader_official {
-    margin-top: 6px;
-    opacity: 0.5;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 400;
+#header img {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
 }
-
-.subheader .subheader_call {
-    text-align: right;
-    margin-top: 19px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 300;
+#header p {
+	font-size: 25pt;
+	color: #3b464c;
+	padding-top: 5px;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
 }
-
-.subheader .subheader_phone {
-    display: block;
-    margin-top: 8px;
-    text-align: right;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 12px;
+.quote {
+	font-size: 12pt;
+	text-align: right;
+	margin-top: 10px;
 }
-
-.subheader .subheader_btn {
-    margin-top: 19px;
-    width: 172px;
-    height: 46px;
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-    border-radius: 4px;
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    }
-
-.promo {
-    min-height: 800px;
-    background: url('../img/promo_bg.jpg') center center/cover no-repeat;
-    padding: 151px 0 135px 0;
-    text-align: center;
+table {
+	width: 100%;
 }
-
-.promo .promo_header {
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0;
+table, th, td {
+	border: 2px solid #cecece;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
 }
-
-.promo .promo_subheader {
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0;
-    margin-top: 22px;
+.selected {
+	background-color: #f36f48;
+	font-weight: bold;
+	color: white;
 }
-
-.promo .promo_descr {
-    margin-top: 23px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+li {
+	margin-bottom: 15px;
+	font-weight: bold;
 }
-
-.promo .promo_btn {
-    display: block;
-    margin: 118px auto 0 auto;
-    width: 259px;
-    height: 63px;
-    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
-    border-radius: 4px;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
+progress {
+	width: 70%;
+	height: 20px;
+	color: #3fb6b2;
+	background: #efefef;
 }
-
-.advantages {
-    padding: 71px 0 65px 0;
+progress::-webkit-progress-bar {
+	background: #efefef;
 }
-
-.label {
-    margin: 0 auto;
-    padding: 5px 12px;
-    width: 112px;
-    height: 24px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase;
+progress::-webkit-progress-value {
+	background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+	color: #3fb6b2;
+	background: #efefef;
 }
-
-.title {
-    margin-top: 38px;
-    color: #222222;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
-    text-align: center;
+iframe, audio {
+	display: block;
+	margin: 0 auto;
+	border: 3px solid #3fb6b2;
 }
-
-.advantages .advantages_block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
+hr {
+	border: 0;
+	height: 1px;
+	background: #f36f48;
 }
-
-.advantages .advantages_block .advantages_round {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 26px;
-    width: 113px;
-    height: 113px;
-    background-color: #1eacc7;
-    border-radius: 100%;
+form {
+	text-align: center;
+	margin-top: 0;
 }
-
-.advantages .advantages_block .advantages_descr {
-    width: 341px;
+.submit {
+	background-color: #3fb6b2;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
 }
-
-.advantages .advantages_block .advantages_descr .adventages_subtitle {
-    line-height: 21px;
-    color: #1eacc7;
-    font-size: 17px;
-    font-weight: 400;
+.submit:hover {
+	background-color: #43a09d;
 }
-
-.advantages .advantages_block .advantages_descr .adventages_text {
-    color: #202020;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 21px;
+textarea {
+	height: 100px;
+}
+input, textarea {
+	margin-bottom: 10px;
+	font-size: 11pt;
+	padding: 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #787575;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+}
+.face {
+	transform: scale(0.4);
+	margin: 0 auto;
+	display: block;
+	margin-top: -35px;
+	margin-bottom: -25px;
+}
+#contacts img {
+	height: 50px;
+	width: 50px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+#contacts a {
+	text-decoration: none;
+}
+#contacts img:hover {
+	opacity: 0.8;
+}
+#contacts {
+	text-align: center;
+}
+.copyright {
+	font-size: 8pt;
+	text-align: right;
+	padding-bottom: 10px;
+	color: grey;
 }
